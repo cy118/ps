@@ -4,9 +4,10 @@
 
 using namespace std;
 
-/* problem ID : BOGGLE */
-/* from algospot.com */
 /* 
+ * problem ID : BOGGLE
+ * from algospot.com 
+ * 
  * 2017.12.24 SUN
  * this code uses brute-force search,
  * so it can be too slow
