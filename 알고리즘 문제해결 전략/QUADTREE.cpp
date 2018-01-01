@@ -4,11 +4,11 @@
 using namespace std;
 
 /*
-* problem ID : QUADTREE
-* from algospot.com
-*
-* 2017.12.30 SAT
-*/
+ * problem ID : QUADTREE
+ * from algospot.com
+ *
+ * 2017.12.30 SAT
+ */
 
 int pos = 0;
 string reverse(string str) {
