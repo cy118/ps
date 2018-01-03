@@ -14,13 +14,11 @@ using namespace std;
 
 int num[500], n; // the # of integers
 
-int cache[500];
+int cache[501];
 
 /* find the lis with time complexity O(n^2) */
 int lis(int start) {
-	if (start == n-1)  return 1;
-
-	int& ret = cache[start];
+	int& ret = cache[start+1];
 	if (ret != -1)  return ret;
 
 	ret = 1;
@@ -42,9 +40,7 @@ int main() {
 			cache[i] = -1;
 			cin >> num[i];
 		}
-		int maxret = 0;
-		for (int i = -1; i < n; ++i)
-			maxret = max(maxret, lis(i));
-		printf("%d\n", maxret);
+		cache[n] = -1;
+		printf("%d\n", lis(-1)-1);
 	}
 }
